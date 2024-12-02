@@ -1,0 +1,28 @@
+{
+	"Macintosh HD:Users:miyako:Desktop:custom-backup:Project:custom-backup.4DProject": [
+		{
+			"backupPath": "Macintosh HD:Users:miyako:Desktop:custom-backup:data[0001].4BK",
+			"structurePath": "Macintosh HD:Users:miyako:Desktop:custom-backup:Project:custom-backup.4DProject",
+			"dataPath": "Macintosh HD:Users:miyako:Desktop:custom-backup:Data:data.4DD",
+			"logPath": "Macintosh HD:Users:miyako:Desktop:custom-backup:data[0000].4BL",
+			"startingDate": "2024-12-02T04:01:44.151Z",
+			"endingDate": "2024-12-02T04:01:44.151Z",
+			"scheduledDate": "2024-12-02T04:01:44.151Z",
+			"backupNumber": 1,
+			"duration": 8,
+			"attachments": []
+		},
+		{
+			"backupPath": "Macintosh HD:Users:miyako:Desktop:custom-backup:data[0002].4BK",
+			"structurePath": "Macintosh HD:Users:miyako:Desktop:custom-backup:Project:custom-backup.4DProject",
+			"dataPath": "Macintosh HD:Users:miyako:Desktop:custom-backup:Data:data.4DD",
+			"logPath": "Macintosh HD:Users:miyako:Desktop:custom-backup:data[0001].4BL",
+			"startingDate": "2024-12-02T04:01:52.304Z",
+			"endingDate": "2024-12-02T04:01:52.304Z",
+			"scheduledDate": "2024-12-02T04:01:52.304Z",
+			"backupNumber": 2,
+			"duration": 7,
+			"attachments": []
+		}
+	]
+}
