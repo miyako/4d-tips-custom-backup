@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="custom-backup" uuid="6884DE981A6B4241B3C20B52B22081D5" collation_locale="ja">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Table_1" uuid="CDE8AD2115E04543904C81018891A03F" id="1">
+		<field name="Id" uuid="77A00248757643978AF6AFE7A54CCCED" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="B7D17D8E5A0441F587A5EA7B4CE82799" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="Id" field_uuid="77A00248757643978AF6AFE7A54CCCED"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="205.890625" top="278.66796875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Backup" uuid="3535C416F3D04B23A74E2BE325786D67" id="2">
+		<field name="Id" uuid="EF7CA94F6A954C7F90EE9EAB7188FE84" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="start" uuid="BA7E0C23C2E0413D90363B6C8F28AB17" type="10" id="2"/>
+		<field name="end" uuid="4542691C720849A2A858D93B10AFBF56" type="10" id="3"/>
+		<field name="status" uuid="F5E06D6B9A18428A9DCD35B832050456" type="21" blob_switch_size="2147483647" id="4"/>
+		<field name="zip" uuid="70351BEA7EC44DE69E2DC980E3B04C55" type="21" blob_switch_size="2147483647" id="5"/>
+		<primary_key field_name="Id" field_uuid="EF7CA94F6A954C7F90EE9EAB7188FE84"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="224" green="234" blue="104" alpha="255"/>
+				<coordinates left="9.7265625" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="8D0E07F68827434DB6467D06092F27DB" type="7">
+		<field_ref uuid="77A00248757643978AF6AFE7A54CCCED" name="Id">
+			<table_ref uuid="CDE8AD2115E04543904C81018891A03F" name="Table_1"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="EB7C98A161CD4CF4BFA942AFBB0F1C45" type="7">
+		<field_ref uuid="EF7CA94F6A954C7F90EE9EAB7188FE84" name="Id">
+			<table_ref uuid="3535C416F3D04B23A74E2BE325786D67" name="Backup"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
